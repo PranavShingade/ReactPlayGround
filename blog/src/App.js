@@ -10,7 +10,7 @@ import TextPrint from './TextPrint';
 import Toggle from './Toggle';
 import HandleForm from './HandleForm';
 import Login from './Login'
-import FuntionASpProps from '/FuncAsProps'
+import FuncAsProps from './FuncAsProps'
 
 function App() {
 
@@ -21,9 +21,7 @@ function App() {
     setName("Siddhu")
     setmail('siddhu@gmail.com')
   }
-  function FAP(){
-    <h3>Function as a Props</h3>
-  }
+  
   return (
     <div className="App">
       <h1>Hello World..!</h1>
@@ -37,7 +35,7 @@ function App() {
       {/* <button onClick={()=>apple()}>Update State</button> */}
       {/* <Login/> */}
       {/* <TextPrint></TextPrint> */}
-      <FuncAsProps item={FAP}/>
+      
     </div>
   );
 }
