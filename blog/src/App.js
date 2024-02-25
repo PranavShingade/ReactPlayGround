@@ -21,7 +21,9 @@ function App() {
     setName("Siddhu")
     setmail('siddhu@gmail.com')
   }
-  
+  function FAP(){
+    alert('Function as a Props send')
+  }
   return (
     <div className="App">
       <h1>Hello World..!</h1>
@@ -35,7 +37,7 @@ function App() {
       {/* <button onClick={()=>apple()}>Update State</button> */}
       {/* <Login/> */}
       {/* <TextPrint></TextPrint> */}
-      
+      <FuncAsProps item={FAP}/>
     </div>
   );
 }
