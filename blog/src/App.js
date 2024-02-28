@@ -11,6 +11,7 @@ import Toggle from './Toggle';
 import HandleForm from './HandleForm';
 import Login from './Login'
 import FuncAsProps from './FuncAsProps'
+import ComponentDidUpdate from './ComponentDidUpdate'
 
 function App() {
 
@@ -27,9 +28,9 @@ function App() {
   return (
     <div className="App">
       <h1>Hello World..!</h1>
-      <Users/>
+      {/* <Users/>
       <Client/>
-      <ClassCompo/>
+      <ClassCompo/> */}
       {/* <HandleForm/>
       <Toggle/> */}
       {/* <Students Name={"Pranav"} Email={'pranav@gmail.com'}/>
@@ -37,7 +38,9 @@ function App() {
       {/* <button onClick={()=>apple()}>Update State</button> */}
       {/* <Login/> */}
       {/* <TextPrint></TextPrint> */}
-      <FuncAsProps item={FAP}/>
+      {/* <FuncAsProps item={FAP}/> */}
+      {/* <ComponentDidMount/> */}
+      <ComponentDidUpdate/>
     </div>
   );
 }
