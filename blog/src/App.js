@@ -12,6 +12,7 @@ import HandleForm from './HandleForm';
 import Login from './Login'
 import FuncAsProps from './FuncAsProps'
 import ComponentDidUpdate from './ComponentDidUpdate'
+import ShouldComponentUpdate from './ShouldComponentUpdate';
 
 function App() {
 
@@ -40,7 +41,8 @@ function App() {
       {/* <TextPrint></TextPrint> */}
       {/* <FuncAsProps item={FAP}/> */}
       {/* <ComponentDidMount/> */}
-      <ComponentDidUpdate/>
+      {/* <ComponentDidUpdate/> */}
+      <ShouldComponentUpdate/>
     </div>
   );
 }
