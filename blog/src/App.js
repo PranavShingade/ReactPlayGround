@@ -13,6 +13,7 @@ import Login from './Login'
 import FuncAsProps from './FuncAsProps'
 import ComponentDidUpdate from './ComponentDidUpdate'
 import ShouldComponentUpdate from './ShouldComponentUpdate';
+import ComponentWillUnmount from './ComponentWillUnmount'
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
   }
   return (
     <div className="App">
-      <h1>Hello World..!</h1>
+      {/* <h1>Hello World..!</h1> */}
       {/* <Users/>
       <Client/>
       <ClassCompo/> */}
@@ -42,7 +43,8 @@ function App() {
       {/* <FuncAsProps item={FAP}/> */}
       {/* <ComponentDidMount/> */}
       {/* <ComponentDidUpdate/> */}
-      <ShouldComponentUpdate/>
+      {/* <ShouldComponentUpdate/> */}
+      <ComponentWillUnmount/>
     </div>
   );
 }
