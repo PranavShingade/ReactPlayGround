@@ -14,7 +14,7 @@ import FuncAsProps from './FuncAsProps'
 import ComponentDidUpdate from './ComponentDidUpdate'
 import ShouldComponentUpdate from './ShouldComponentUpdate';
 import ComponentWillUnmount from './ComponentWillUnmount'
-
+import User from './FunctionalComponent/User'
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -44,7 +44,8 @@ function App() {
       {/* <ComponentDidMount/> */}
       {/* <ComponentDidUpdate/> */}
       {/* <ShouldComponentUpdate/> */}
-      <ComponentWillUnmount/>
+      {/* <ComponentWillUnmount/> */}
+      <User/>
     </div>
   );
 }
