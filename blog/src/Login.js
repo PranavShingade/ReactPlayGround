@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState} from 'react';
-
+import {Button} from 'react-bootstrap'
 function Login()    
 {
     const[user , setUser] = useState("")
@@ -10,7 +10,7 @@ function Login()
 
     function LoginHandle(e)
     {
-        alert("hello")
+        alert('Your Data Submit Successfully..!')
         e.preventDefault()
     }
 
@@ -31,9 +31,9 @@ function Login()
     return(
         <div>
         <form onSubmit={LoginHandle}>
-        <input type='text' placeholder='Enter UserID' onChange={userHandler}>{userErr?<span>User Not Valid</span>:""}</input><br></br>
+        <input type='text' placeholder='Enter UserID' onChange={userHandler}></input>{userErr?<span>User Not Valid</span>:""}<br></br>
         <input type='text' placeholder='Enter Password'></input>{passErr?<span>Password Not Valid</span>:""}<br></br>
-        <button type='submit'>Submit</button>
+        <Button type='submit' variant="outline-success">Submit</Button>{' '}
         </form>
         </div>
         
