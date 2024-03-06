@@ -1,5 +1,6 @@
 import React ,{Component}from 'react'
 import { useState } from 'react'
+import {Button} from 'react-bootstrap'
 
 function HandleForm()
 {
@@ -9,14 +10,11 @@ const[interest, setInterest]=useState("")
 const[tnc,setTnc] = useState(false)
 
     function getData(e){
-        return(
-            console.log(name,interest,tnc)
-            
-            
-        )
+            console.log(name,interest,tnc);
+            e.preventDefault()
     }
       return(
-        <div type='handle'>
+        <div >
         <form onSubmit={getData}>
             <input type='text' placeholder='Enter Name '
              onChange={(e)=>setName(e.target.value)}></input><br/>
@@ -29,7 +27,7 @@ const[tnc,setTnc] = useState(false)
             </select><br/>
             <input type='checkbox' onChange={(e)=>setTnc(e.target.checked)}></input>
             <span>Terms & Conditions</span><br/>
-            <button type='Submit' >Submit</button>
+            <Button variant="outline-success" type='submit' >Submit</Button>{''}
         </form>
         </div>
 

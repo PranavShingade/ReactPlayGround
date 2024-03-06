@@ -15,6 +15,8 @@ import ComponentDidUpdate from './ComponentDidUpdate'
 import ShouldComponentUpdate from './ShouldComponentUpdate';
 import ComponentWillUnmount from './ComponentWillUnmount'
 import User from './FunctionalComponent/User'
+import Parent from './FunctionalComponent/Parent'
+import StyleDemo from './FunctionalComponent/StyleDemo'
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -30,22 +32,24 @@ function App() {
   return (
     <div className="App">
       {/* <h1>Hello World..!</h1> */}
-      {/* <Users/>
-      <Client/>
+      <Users/><br></br>
+      {/* <Client/>
       <ClassCompo/> */}
-      {/* <HandleForm/>
-      <Toggle/> */}
+      <HandleForm/>
+      {/* <Toggle/> */}
       {/* <Students Name={"Pranav"} Email={'pranav@gmail.com'}/>
-      <Students1 Name={name} Email={email}/> */}
-      {/* <button onClick={()=>apple()}>Update State</button> */}
-      {/* <Login/> */}
+      <Students1 Name={name} Email={email}/>
+      <button onClick={()=>apple()}>Update State</button> */}
+      <Login/>
       {/* <TextPrint></TextPrint> */}
       {/* <FuncAsProps item={FAP}/> */}
       {/* <ComponentDidMount/> */}
       {/* <ComponentDidUpdate/> */}
       {/* <ShouldComponentUpdate/> */}
       {/* <ComponentWillUnmount/> */}
-      <User/>
+      {/* <User/> */}
+      {/* <Parent/> */}
+      <StyleDemo/>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 
 import {useState} from "react";
 import App from "./App";
-
+import {Button} from 'react-bootstrap'
 function Users(){
     
     let [name,setName] = useState("world")
@@ -15,7 +15,7 @@ function Users(){
     return(
         <div className="app">
             <h1>{name}</h1>
-            <button onClick={Apple}>Click Here..</button>
+            <Button variant="outline-info" onClick={Apple}>Click Here..</Button>{' '}
         </div>
     )
     
