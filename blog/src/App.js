@@ -17,6 +17,7 @@ import ComponentWillUnmount from './ComponentWillUnmount'
 import User from './FunctionalComponent/User'
 import Parent from './FunctionalComponent/Parent'
 import StyleDemo from './FunctionalComponent/StyleDemo'
+import Studentss from './FunctionalComponent/Studentss'
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -35,12 +36,12 @@ function App() {
       <Users/><br></br>
       {/* <Client/>
       <ClassCompo/> */}
-      <HandleForm/>
+      {/* <HandleForm/> */}
       {/* <Toggle/> */}
       {/* <Students Name={"Pranav"} Email={'pranav@gmail.com'}/>
       <Students1 Name={name} Email={email}/>
       <button onClick={()=>apple()}>Update State</button> */}
-      <Login/>
+      {/* <Login/> */}
       {/* <TextPrint></TextPrint> */}
       {/* <FuncAsProps item={FAP}/> */}
       {/* <ComponentDidMount/> */}
@@ -49,7 +50,8 @@ function App() {
       {/* <ComponentWillUnmount/> */}
       {/* <User/> */}
       {/* <Parent/> */}
-      <StyleDemo/>
+      {/* <StyleDemo/> */}
+       <Studentss/> {/*map looping */}
     </div>
   );
 }
