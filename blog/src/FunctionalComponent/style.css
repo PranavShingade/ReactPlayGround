@@ -2,3 +2,10 @@
     color:orange;
     background-color:grey;
 }
+.asb{
+    display:flex;
+    justify-content:center;
+    aline-item:center;
+    flexDirection:'column';
+    
+}
