@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Users from './Users';
+// import Users from './Users';
 import Client from './Client';
 import ClassCompo from './ClassCompo';
 import Students from './Students';
@@ -19,6 +19,7 @@ import Parent from './FunctionalComponent/Parent'
 import StyleDemo from './FunctionalComponent/StyleDemo'
 import Studentss from './FunctionalComponent/Studentss'
 import Boot from './FunctionalComponent/Table'
+import Customer from './FunctionalComponent/Customer';
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -34,7 +35,7 @@ function App() {
   return (
     <div className="App">
       {/* <h1>Hello World..!</h1> */}
-      <Users/><br></br>
+      {/* <Users/><br></br> */}
       {/* <Client/>
       <ClassCompo/> */}
       {/* <HandleForm/> */}
@@ -53,7 +54,8 @@ function App() {
       {/* <Parent/> */}
       {/* <StyleDemo/> */}
       {/* <Studentss/> map looping */}
-      <Boot/>
+      {/* <Boot/> */}
+      <Customer/>
     </div>
   );
 }

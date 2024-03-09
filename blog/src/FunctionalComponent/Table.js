@@ -7,7 +7,7 @@ function Boot(){
         {Name:"Amey",Email:"Amey@gmail.com",Contact:321},
         {Name:"Abhi",Email:"Abhi@gmail.com",Contact:456},
         {Name:"Amit",Email:"Amit@gmail.com",Contact:654},
-        {Name:"Shubh",Email:"Shubh@gmail.com",Contact:789},
+        {Name:"Shubh",Email:"Shubh@gmail.com",Contact:654},
     ];
     return(
         <div className='boot'>
