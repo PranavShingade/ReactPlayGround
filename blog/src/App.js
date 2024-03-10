@@ -20,6 +20,7 @@ import StyleDemo from './FunctionalComponent/StyleDemo'
 import Studentss from './FunctionalComponent/Studentss'
 import Boot from './FunctionalComponent/Table'
 import Customer from './FunctionalComponent/Customer';
+import Parent1 from './FunctionalComponent/Parent1';
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -55,7 +56,8 @@ function App() {
       {/* <StyleDemo/> */}
       {/* <Studentss/> map looping */}
       {/* <Boot/> */}
-      <Customer/>
+      {/* <Customer/> */}
+      <Parent1/>
     </div>
   );
 }
