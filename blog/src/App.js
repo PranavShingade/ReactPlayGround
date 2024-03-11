@@ -5,7 +5,7 @@ import Client from './Client';
 import ClassCompo from './ClassCompo';
 import Students from './Students';
 import Students1 from './Students1';
-import { useState } from 'react';
+import { PureComponent, useState } from 'react';
 import TextPrint from './TextPrint';
 import Toggle from './Toggle';
 import HandleForm from './HandleForm';
@@ -21,6 +21,8 @@ import Studentss from './FunctionalComponent/Studentss'
 import Boot from './FunctionalComponent/Table'
 import Customer from './FunctionalComponent/Customer';
 import Parent1 from './FunctionalComponent/Parent1';
+import Parent3 from './FunctionalComponent/Parent3';
+import PureCounter from './PureCounter'
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -57,7 +59,9 @@ function App() {
       {/* <Studentss/> map looping */}
       {/* <Boot/> */}
       {/* <Customer/> */}
-      <Parent1/>
+      {/* <Parent1/> */}
+       <Parent3/> 
+      <PureCounter/>
     </div>
   );
 }
