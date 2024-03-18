@@ -24,6 +24,8 @@ import Parent1 from './FunctionalComponent/Parent1';
 import Parent3 from './FunctionalComponent/Parent3';
 import PureCounter from './PureCounter'
 import CountMemo from './FunctionalComponent/CountMemo';
+import UseRef from './UseRef';
+import LoginOption from './FunctionalComponent/LoginOption';
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -63,7 +65,9 @@ function App() {
       {/* <Parent1/> */}
       {/* <Parent3/> 
       <PureCounter/> */}
-      <CountMemo/>
+      {/* <CountMemo/> */}
+      <UseRef/>
+      <LoginOption/>
     </div>
   );
 }
