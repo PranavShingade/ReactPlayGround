@@ -26,6 +26,7 @@ import PureCounter from './PureCounter'
 import CountMemo from './FunctionalComponent/CountMemo';
 import UseRef from './UseRef';
 import LoginOption from './FunctionalComponent/LoginOption';
+import InputRef from './FunctionalComponent/InputRef';
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -66,8 +67,9 @@ function App() {
       {/* <Parent3/> 
       <PureCounter/> */}
       {/* <CountMemo/> */}
-      <UseRef/>
-      <LoginOption/>
+      {/* <UseRef/>
+      <LoginOption/> */}
+      <InputRef/>
     </div>
   );
 }
