@@ -5,7 +5,7 @@ import Client from './Client';
 import ClassCompo from './ClassCompo';
 import Students from './Students';
 import Students1 from './Students1';
-import { PureComponent, useState } from 'react';
+ import { PureComponent, useState } from 'react';
 import TextPrint from './TextPrint';
 import Toggle from './Toggle';
 import HandleForm from './HandleForm';
@@ -27,6 +27,9 @@ import CountMemo from './FunctionalComponent/CountMemo';
 import UseRef from './UseRef';
 import LoginOption from './FunctionalComponent/LoginOption';
 import InputRef from './FunctionalComponent/InputRef';
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Home from './FunctionalComponent/Home'
+import About from './FunctionalComponent/About'
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -69,7 +72,13 @@ function App() {
       {/* <CountMemo/> */}
       {/* <UseRef/>
       <LoginOption/> */}
-      <InputRef/>
+      {/* <InputRef/> */}
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/about' element={<About/>}></Route>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
