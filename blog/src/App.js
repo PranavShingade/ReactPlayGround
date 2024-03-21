@@ -18,7 +18,7 @@ import User from './FunctionalComponent/User'
 import Parent from './FunctionalComponent/Parent'
 import StyleDemo from './FunctionalComponent/StyleDemo'
 import Studentss from './FunctionalComponent/Studentss'
-import Boot from './FunctionalComponent/Table'
+ import Boot from './FunctionalComponent/Table'
 import Customer from './FunctionalComponent/Customer';
 import Parent1 from './FunctionalComponent/Parent1';
 import Parent3 from './FunctionalComponent/Parent3';
@@ -27,9 +27,11 @@ import CountMemo from './FunctionalComponent/CountMemo';
 import UseRef from './UseRef';
 import LoginOption from './FunctionalComponent/LoginOption';
 import InputRef from './FunctionalComponent/InputRef';
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import {BrowserRouter,Routes,Route,Link} from 'react-router-dom'
 import Home from './FunctionalComponent/Home'
 import About from './FunctionalComponent/About'
+import Navbar from './FunctionalComponent/Navbar';
+
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -73,10 +75,13 @@ function App() {
       {/* <UseRef/>
       <LoginOption/> */}
       {/* <InputRef/> */}
+      
       <BrowserRouter>
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>
+        <Route path='/boot' element={<Boot/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>
