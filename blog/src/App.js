@@ -31,6 +31,7 @@ import {BrowserRouter,Routes,Route,Link} from 'react-router-dom'
 import Home from './FunctionalComponent/Home'
 import About from './FunctionalComponent/About'
 import Navbar from './FunctionalComponent/Navbar';
+import Page404 from './FunctionalComponent/Page404';
 
 function App() {
 
@@ -82,6 +83,7 @@ function App() {
         <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>
         <Route path='/boot' element={<Boot/>}></Route>
+        <Route path='/*' element={<Page404/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>
