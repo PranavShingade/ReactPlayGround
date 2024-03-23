@@ -83,7 +83,7 @@ function App() {
         <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>
         <Route path='/boot' element={<Boot/>}></Route>
-        <Route path='/user/:name' element={<User3/>}></Route>
+        <Route path='about/user/:name' element={<User3/>}></Route>
         <Route path='/*' element={<Page404/>}></Route>
       </Routes>
       </BrowserRouter>
