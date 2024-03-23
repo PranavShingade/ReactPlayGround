@@ -32,7 +32,7 @@ import Home from './FunctionalComponent/Home'
 import About from './FunctionalComponent/About'
 import Navbar from './FunctionalComponent/Navbar';
 import Page404 from './FunctionalComponent/Page404';
-
+import User3 from './FunctionalComponent/User3';
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -83,6 +83,7 @@ function App() {
         <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>
         <Route path='/boot' element={<Boot/>}></Route>
+        <Route path='/user/:name' element={<User3/>}></Route>
         <Route path='/*' element={<Page404/>}></Route>
       </Routes>
       </BrowserRouter>
