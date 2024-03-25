@@ -33,6 +33,7 @@ import About from './FunctionalComponent/About'
 import Navbar from './FunctionalComponent/Navbar';
 import Page404 from './FunctionalComponent/Page404';
 import User3 from './FunctionalComponent/User3';
+import Filter from './FunctionalComponent/Filter';
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -77,6 +78,7 @@ function App() {
       <LoginOption/> */}
       {/* <InputRef/> */}
       
+      
       <BrowserRouter>
       <Navbar/>
       <Routes>
@@ -84,10 +86,14 @@ function App() {
         <Route path='/about' element={<About/>}></Route>
         <Route path='/boot' element={<Boot/>}></Route>
         <Route path='about/user/:name' element={<User3/>}></Route>
+        <Route path='/Filter' element={<Filter/>}></Route>
         <Route path='/*' element={<Page404/>}></Route>
       </Routes>
       </BrowserRouter>
+
+      
     </div>
+
   );
 }
 
