@@ -35,6 +35,9 @@ import Page404 from './FunctionalComponent/Page404';
 import User3 from './FunctionalComponent/User3';
 import Filter from './FunctionalComponent/Filter';
 import SignUp from './FunctionalComponent/SignUp';
+import Contact from './FunctionalComponent/Contact';
+import Channel from './FunctionalComponent/Channel';
+import Company from './FunctionalComponent/Company';
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -90,6 +93,10 @@ function App() {
         <Route path='/Filter' element={<Filter/>}></Route>
         <Route path='/signup' element={<SignUp/>}></Route>
         <Route path='/*' element={<Page404/>}></Route>
+        <Route path='/contact/' element={<Contact/>}>
+          <Route path='channel' element={<Channel/>}></Route>
+          <Route path='company' element={<Company/>}></Route>
+        </Route>
       </Routes>
       </BrowserRouter>
 
