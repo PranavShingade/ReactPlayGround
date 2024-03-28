@@ -10,6 +10,7 @@ function Navbar(){
             <li><NavLink className='nav-link' style={{color:'red'}} to='/'>Home</NavLink></li>
             <li><NavLink to='/about' className='nav-link'>About us</NavLink></li>
             <li><NavLink to='/boot' className='nav-link'>Users</NavLink></li>
+            <li><NavLink to='/signup' className='nav-link'>SignUP</NavLink></li>
             </ul>
         </div>
     )
