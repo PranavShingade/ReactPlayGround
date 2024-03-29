@@ -93,10 +93,7 @@ function App() {
         <Route path='/Filter' element={<Filter/>}></Route>
         <Route path='/signup' element={<SignUp/>}></Route>
         <Route path='/*' element={<Page404/>}></Route>
-        <Route path='/contact/' element={<Contact/>}>
-          <Route path='channel' element={<Channel/>}></Route>
-          <Route path='company' element={<Company/>}></Route>
-        </Route>
+        
       </Routes>
       </BrowserRouter>
 
