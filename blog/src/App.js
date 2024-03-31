@@ -38,6 +38,7 @@ import SignUp from './FunctionalComponent/SignUp';
 import Contact from './FunctionalComponent/Contact';
 import Channel from './FunctionalComponent/Channel';
 import Company from './FunctionalComponent/Company';
+import Navbar1 from './FunctionalComponent/Navbar1';
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -84,7 +85,7 @@ function App() {
       
       
       <BrowserRouter>
-      <Navbar/>
+      <Navbar1/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>
