@@ -5,7 +5,7 @@ import Client from './Client';
 import ClassCompo from './ClassCompo';
 import Students from './Students';
 import Students1 from './Students1';
- import { PureComponent, useState } from 'react';
+ import { Component, PureComponent, useState } from 'react';
 import TextPrint from './TextPrint';
 import Toggle from './Toggle';
 import HandleForm from './HandleForm';
@@ -39,6 +39,8 @@ import Contact from './FunctionalComponent/Contact';
 import Channel from './FunctionalComponent/Channel';
 import Company from './FunctionalComponent/Company';
 import Navbar1 from './FunctionalComponent/Navbar1';
+import Login1 from './FunctionalComponent/Login1';
+import Protected from './FunctionalComponent/Protected';
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -85,11 +87,12 @@ function App() {
       
       
       <BrowserRouter>
-      <Navbar1/>
+      <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/about' element={<About/>}></Route>
-        <Route path='/boot' element={<Boot/>}></Route>
+        <Route path='/' element={<Protected Component={Home}/>}></Route>
+        <Route path='/login' element={<Login1/>}></Route>
+        <Route path='/about' element={<Protected Component={About}/>}></Route>
+        <Route path='/boot' element={<Boot/>}></Route> {/*THis is users Page*/}
         <Route path='about/user/:name' element={<User3/>}></Route>
         <Route path='/Filter' element={<Filter/>}></Route>
         <Route path='/signup' element={<SignUp/>}></Route>
