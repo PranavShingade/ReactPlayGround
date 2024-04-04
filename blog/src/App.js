@@ -41,6 +41,7 @@ import Company from './FunctionalComponent/Company';
 import Navbar1 from './FunctionalComponent/Navbar1';
 import Login1 from './FunctionalComponent/Login1';
 import Protected from './FunctionalComponent/Protected';
+
 function App() {
 
    const [name,setName] = useState("Abhi")
