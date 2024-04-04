@@ -1,5 +1,6 @@
 import React from 'react'
 import {Table} from 'react-bootstrap'
+import GetAPI from './GetAPI';
 function Boot(){
 
     const list = [
@@ -31,7 +32,9 @@ function Boot(){
                     </tbody>
                 </Table>
             </div>
+            <GetAPI/>
         </div>
+       
     )
 }
     export default Boot;
