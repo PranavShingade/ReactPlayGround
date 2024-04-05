@@ -1,6 +1,7 @@
 import React from 'react'
 import {Table} from 'react-bootstrap'
 import GetAPI from './GetAPI';
+import PostAPI from './PostAPI';
 function Boot(){
 
     const list = [
@@ -33,6 +34,7 @@ function Boot(){
                 </Table>
             </div>
             <GetAPI/>
+            <PostAPI></PostAPI>
         </div>
        
     )
