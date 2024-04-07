@@ -27,7 +27,7 @@ function PostAPI(){
             <h1>PostAPI Method</h1>
             <input name="name" value={name} onChange={(e)=>setName(e.target.value)} placeholder="Name"/><br/><br/>
             <input name="email" value={email} onChange={(e)=>setEmail(e.target.value)}  placeholder="Email"/><br/><br/>
-            <input name="password" value={pass} onChange={(e)=>setPass(e.target.value)} placeholder="Password    "/><br/><br/>
+            <input name="password" value={pass} onChange={(e)=>setPass(e.target.value)} placeholder="Password"/><br/><br/>
             <button type="button" onClick={SaveUser}>Save New User</button>
         </div>
     )

@@ -2,6 +2,7 @@ import React from 'react'
 import {Table} from 'react-bootstrap'
 import GetAPI from './GetAPI';
 import PostAPI from './PostAPI';
+import DeleteAPI from './DeleteAPI';
 function Boot(){
 
     const list = [
@@ -35,6 +36,7 @@ function Boot(){
             </div>
             <GetAPI/>
             <PostAPI></PostAPI>
+            <DeleteAPI/>
         </div>
        
     )
