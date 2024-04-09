@@ -3,7 +3,11 @@ import { useState,useEffect } from "react";
 
 function DeleteAPI(){
 
-    const[data,setData]=useState([]);
+    const[data,setData]=useState([])
+    const[name,setName]=useState("");
+    const[email,setEmail]=useState("");
+    const[pass,setPass]=useState("");
+
     useEffect(()=>{
         getList();
     },[])
@@ -13,6 +17,10 @@ function DeleteAPI(){
             result.json().then((resp)=>{
                 setData(resp);
                 console.log(resp)
+                setName(resp[0].name)
+                setEmail(resp[0].email)
+                setPass(resp[0].pass)
+
             })
         })
     }
@@ -29,6 +37,14 @@ function DeleteAPI(){
         
     }
     
+    function SelectUser(id){
+        console.log(data[id-1]);
+        let item = data[id - 1];
+        setName(item.name)
+                setEmail(item.email)
+                setPass(item.pass)
+        
+    }
     return(
         <div>
             <h1>Delete API Method</h1>
@@ -43,15 +59,16 @@ function DeleteAPI(){
                  
                 </tr>
                     {
-                        data.map((items)=>
-                           <tr>
+                        data.map((items,i)=>
+                           <tr key={i}>
                             
                             <td>{items.id}</td>
                             <td>{items.name}</td>
                             <td>{items.email}</td>
                             <td>{items.password}</td>
                             <td><button type="delete" onClick={()=>DeleteRecord(items.id)}>Delete</button></td>
-                            
+                            <td><button type="button" onClick={()=>SelectUser(items.id)}>Update</button></td>
+
                            </tr>
                         )
                     }
@@ -59,6 +76,13 @@ function DeleteAPI(){
                 
 
             </table>
+            <div>
+                <input type="text" value={name}/><br/><br/>
+                <input type="text" value={email}/><br/><br/>
+                <input type="text" value={pass} /><br/><br/>
+                <button type="button">Update</button>
+
+            </div>
         </div>
     )
 }
