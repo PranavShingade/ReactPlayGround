@@ -39,10 +39,10 @@ function DeleteAPI(){
     
     function SelectUser(id){
         console.log(data[id-1]);
-        let item = data[id - 1];
-        setName(item.name)
-                setEmail(item.email)
-                setPass(item.pass)
+        const item = data[id];
+        // setName(item.name)
+        setEmail(item.email)
+        setPass(item.pass)
         
     }
     return(
