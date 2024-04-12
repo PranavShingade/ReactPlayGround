@@ -27,7 +27,7 @@ function DeleteAPI(){
     }
 
     function DeleteRecord(id){
-        fetch("https://6604fd112ca9478ea17eefc8.mockapi.io/Acculexa/"+id,{
+        fetch(`https://6604fd112ca9478ea17eefc8.mockapi.io/Acculexa/${id}`,{
             method:"DELETE",
         }).then((result)=>{
             result.json().then((resp)=>{
@@ -39,11 +39,12 @@ function DeleteAPI(){
     }
     
     function SelectUser(id){
-        console.log(data[id-1]);
-        setName(data[id-1].name)
-        setEmail(data[id-1].email)
-        setPass(data[id-1].pass)
-        setUserId(data[id-1].id)
+        console.log(data[id-2]);
+        let i = data[id-4]
+        setName(i.name)
+        setEmail(i.email)
+        setPass(i.pass)
+        setUserId(i.id)
         
     }
     function UpdateUser(){
@@ -68,6 +69,7 @@ function DeleteAPI(){
         <div>
             <h1>Delete API Method</h1>
             <table border={2}>
+                <tbody>
                 <tr>
                    
                         <td>UserId</td>
@@ -92,13 +94,14 @@ function DeleteAPI(){
                         )
                     }
 
-                
+                </tbody>
 
             </table>
             <div>
                 <input type="text" value={name} onChange={(e)=>setName(e.target.value)}/><br/><br/>
                 <input type="text" value={email}onChange={(e)=>setEmail(e.target.value)}/><br/><br/>
                 <input type="text" value={pass}onChange={(e)=>setPass(e.target.value)}/><br/><br/>
+                <input type="text" value={userId}onChange={(e)=>setUserId(e.target.value)}/><br/><br/>
                 <button type="button" onClick={UpdateUser}>Update</button>
 
             </div>
