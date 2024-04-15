@@ -41,7 +41,7 @@ import Company from './FunctionalComponent/Company';
 import Navbar1 from './FunctionalComponent/Navbar1';
 import Login1 from './FunctionalComponent/Login1';
 import Protected from './FunctionalComponent/Protected';
-
+import PreviousState from './FunctionalComponent/PreviousState';
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -104,6 +104,7 @@ function App() {
         </Route>
       </Routes>
       </BrowserRouter>
+      <PreviousState/>
 
       
     </div>
