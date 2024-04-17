@@ -42,6 +42,8 @@ import Navbar1 from './FunctionalComponent/Navbar1';
 import Login1 from './FunctionalComponent/Login1';
 import Protected from './FunctionalComponent/Protected';
 import PreviousState from './FunctionalComponent/PreviousState';
+import { CommonContext } from './Components/CommonContext';
+import Context from '../src/Context'
 function App() {
 
    const [name,setName] = useState("Abhi")
@@ -86,15 +88,15 @@ function App() {
       <LoginOption/> */}
       {/* <InputRef/> */}
       
-      
+{/*       
       <BrowserRouter>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Protected Component={Home}/>}></Route>
         <Route path='/login' element={<Login1/>}></Route>
         <Route path='/about' element={<Protected Component={About}/>}></Route>
-        <Route path='/boot' element={<Boot/>}></Route> {/*THis is users Page*/}
-        <Route path='about/user/:name' element={<User3/>}></Route>
+        <Route path='/boot' element={<Boot/>}></Route> THis is users Page */}
+        {/* <Route path='about/user/:name' element={<User3/>}></Route>
         <Route path='/Filter' element={<Filter/>}></Route>
         <Route path='/signup' element={<SignUp/>}></Route>
         <Route path='/*' element={<Page404/>}></Route>
@@ -104,8 +106,9 @@ function App() {
         </Route>
       </Routes>
       </BrowserRouter>
-      <PreviousState/>
+      <PreviousState/>  */}
 
+      <Context/>
       
     </div>
     
